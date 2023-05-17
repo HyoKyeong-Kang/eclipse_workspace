@@ -1,0 +1,20 @@
+package ex0502;
+
+class Person {
+String name;
+int reg_num;
+
+void walk() {
+	System.out.println("사람이 걷습니다.");
+}
+void run() {
+	System.out.println("사람이 뜁니다.");
+}
+}
+
+public class CreatObject {
+	public static void main(String[] args) {
+		Person person01 = new Person();
+	}
+}
+

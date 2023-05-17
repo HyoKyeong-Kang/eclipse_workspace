@@ -1,0 +1,15 @@
+package ex0502;
+
+public {
+String name;
+int reg_num;
+
+void walk() {
+	System.out.println("사람이 걷습니다.");
+}
+void run() {
+	System.out.println("사람이 뜁니다.");
+}
+}
+
+public class CreatObject

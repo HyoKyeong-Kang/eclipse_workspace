@@ -1,0 +1,33 @@
+package chap09.EX2;
+
+class Bank {
+	public String account;
+	public double balance;
+	public double input;
+	public double output;
+	
+		
+	public Bank() {
+		super();
+		this.account = account;
+		this.balance = balance;
+		this.input = input;
+		this.output = output;
+	}
+
+
+	public void accountPrint() {
+		System.out.printf("계좌번호: %s\n 잔액: %s\n", this.account, this.balance);
+	}
+	
+	public void printInput() {
+		System.out.printf("%s 원이 예금되었습니다.\n",this.input);
+		}
+	
+	public void printOutput() {
+		System.out.printf("%s 원이 인출되었습니다.\n",this.output);
+		
+	}
+	
+	
+}

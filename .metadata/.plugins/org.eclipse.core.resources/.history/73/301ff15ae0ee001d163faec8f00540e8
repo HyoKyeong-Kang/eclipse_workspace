@@ -1,0 +1,31 @@
+package chap09.EX2;
+
+import java.util.Scanner;
+
+
+public class BankMain {
+
+
+	public static void main(String[] args) {
+		
+
+		//사용자 입력
+		Scanner sc = new Scanner(System.in);
+		
+		Account account = new Account("1234567890", 100000);
+		account.accountPrint();
+		
+		//예금
+		System.out.println("입금할 금액을 입력하세요.");
+		double depositAmount =sc.nextDouble();
+		
+		account.deposit(depositAmount);
+		
+		//인출
+		System.out.println("출금할 금액을 입력하세요");
+		double withdrawAmount = sc.nextDouble();
+		
+		account.withdraw(withdrawAmount);
+	}
+
+}

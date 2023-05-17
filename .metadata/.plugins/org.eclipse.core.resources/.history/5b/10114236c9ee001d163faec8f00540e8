@@ -1,0 +1,43 @@
+package chap09.EX2;
+
+import java.util.Scanner;
+
+public class DeleteUser {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("이름을 입력하시오 : ");
+		String iName = sc.nextLine();
+		
+		System.out.println("아이디를 입력하시오 : ");
+		String iID = sc.nextLine();
+		
+		System.out.println("비밀번호를 입력하시오 : ");
+		String iPW = sc.nextLine();
+		
+		System.out.println("핸드폰 번호를 입력하시오[예)010-0000-0000] : ");
+		String iPh = sc.nextLine();
+		
+		System.out.println("이메일을 입력하시오[예)아이디@이메일.com] : ");
+		String iEmail = sc.nextLine();
+		
+		Join_EX member = new Join_EX (iName, iID, iPW, iPh, iEmail);
+		member.printinfo();
+		
+		System.out.println("기존의 아이디를 입력하세요.");
+		String newid = sc.next();
+		
+		if(iID.equals(newid)) {
+			System.out.println("비밀번호를 입력하세요.");
+			String newPW = sc.next();
+			if(newPW.equals(iPW)) {
+				member = null;
+				System.out.println("회원정보가 삭제되었습니다.");
+			}
+			else {
+				System.out.println("비밀번호가 일치하지 않습니다.");
+			}
+		} else {
+			System.out.println("아이디가 일치하지 않습니다.");
+		}
+	}	
+}

@@ -1,0 +1,21 @@
+package chap09.EX2;
+
+import java.util.Scanner;
+
+import chap09.EX2.Bank;
+
+public class BankMain {
+
+	public static void main(String[] args) {
+		Bank accountInfo = new Bank(null, 0, 0, 0);
+//		int account = 1234567890;
+		double balance = 100000.0;
+		double input = 30000.0;
+		double output = 10000.0;
+		
+		Scanner sc = new Scanner(System.in);
+		String inputAccount = sc.nextLine();
+		accountInfo.accountPrint();
+	}
+
+}

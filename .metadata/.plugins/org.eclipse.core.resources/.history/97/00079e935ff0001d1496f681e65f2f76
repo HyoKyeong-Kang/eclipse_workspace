@@ -1,0 +1,10 @@
+package Overrriding;
+
+public class Buyer {
+	int amount = 10000000;
+	
+	void buy(Phone p, String telecom) {
+		if(amount < p.)
+	}
+	
+}

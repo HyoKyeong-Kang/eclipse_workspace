@@ -1,0 +1,8 @@
+package chap08_pack01;
+package ;
+
+public class A {
+public int m = 3;
+public int n = 5;
+
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="chap07_thisMethod.Cat"/>
+    <fullyQualifiedTypeName name="pack1.A"/>
+    <fullyQualifiedTypeName name="accessModifier02.AA"/>
+    <fullyQualifiedTypeName name="accessModifier02.CC"/>
+    <fullyQualifiedTypeName name="java.lang.Void"/>
+    <fullyQualifiedTypeName name="chap09.EX2.Join_EX"/>
+    <fullyQualifiedTypeName name="chap10.Dog"/>
+    <fullyQualifiedTypeName name="chap10.Bird"/>
+    <fullyQualifiedTypeName name="chap10.Cat"/>
+    <fullyQualifiedTypeName name="chap10.Animal"/>
+    <fullyQualifiedTypeName name="chap10.Vehicle"/>
+    <fullyQualifiedTypeName name="chap10.Car"/>
+    <fullyQualifiedTypeName name="java.lang.VerifyError"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="chap10_overriding.Vehicle"/>
+    <fullyQualifiedTypeName name="chap10_overriding.Brand"/>
+    <fullyQualifiedTypeName name="chap09.EX2.Account1"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.Object"/>
+</qualifiedTypeNameHistroy>

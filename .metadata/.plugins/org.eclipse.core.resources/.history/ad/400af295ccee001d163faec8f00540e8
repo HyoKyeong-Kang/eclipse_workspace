@@ -1,0 +1,20 @@
+package chap09.EX2;
+
+import chap09.EX2.Bank;
+public class BankMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Bank accountInfo = new Bank();
+		int account = 1234567890;
+		double balance = 100000.0;
+		double input = 30000.0;
+		double output = 10000.0;
+		
+		Scanner sc = new Scanner(System.in);
+		int inputAccount = sc.
+		accountInfo.accountPrint();
+	}
+
+}

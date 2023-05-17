@@ -1,0 +1,22 @@
+package chap09.EX2;
+
+import java.util.Scanner;
+
+import chap09.EX2.Bank;
+
+public class BankMain {
+
+	public static void main(String[] args) {
+		Bank accountInfo = new Bank();
+		int account = 1234567890;
+		double balance = 100000.0;
+		double input = 30000.0;
+		double output = 10000.0;
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("계좌번호를 입력하세요.");
+		int inputAccount = sc.nextInt();
+		accountInfo.accountPrint();
+	}
+
+}

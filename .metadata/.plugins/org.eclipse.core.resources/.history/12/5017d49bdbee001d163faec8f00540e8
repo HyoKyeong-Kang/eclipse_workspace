@@ -1,0 +1,28 @@
+package chap09.EX2;
+
+import java.util.Scanner;
+
+import chap09.EX2.Bank;
+
+public class BankMain {
+
+
+	public static void main(String[] args) {
+		
+//		double input = 30000.0;
+//		double output = 10000.0;
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("계좌번호를 입력하세요.");
+		int inputAccount = sc.nextInt();
+		AccountInfo accountInfo = new AccountInfo(inputAccount, inputAccount);
+		if(accountInfo.equals(inputAccount)) {
+			System.out.println("예금할 금액을 입력하세요.");
+			double inputcash = sc.nextInt();
+		}
+		else {
+			System.out.println("등록된 계좌가 없습니다!");
+		}
+	}
+
+}

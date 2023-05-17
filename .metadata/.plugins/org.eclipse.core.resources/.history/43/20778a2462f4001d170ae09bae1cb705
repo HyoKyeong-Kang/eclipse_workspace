@@ -1,0 +1,11 @@
+
+public class Rectangle extends Shape{
+	double length;
+	double width;
+	
+
+
+public Recstangle(String Color) {
+	// TODO Auto-generated constructor stub
+}
+}

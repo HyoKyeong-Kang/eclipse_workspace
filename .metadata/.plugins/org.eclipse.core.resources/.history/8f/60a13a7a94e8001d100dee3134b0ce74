@@ -1,0 +1,19 @@
+package ex0502;
+
+
+class A {
+	int m;
+	void method(); {
+		System.out.println("A의 메서드");
+	}
+}
+public class CreatObject02 {public CreatObject02() {
+	// TODO Auto-generated constructor stub
+	public static void main(String[] args) {
+	A a = new A();
+	a.m= 5;
+	System.out.println(a.m);
+	a.print();
+	}
+}
+

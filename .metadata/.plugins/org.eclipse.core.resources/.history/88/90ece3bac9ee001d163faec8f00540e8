@@ -1,0 +1,41 @@
+package chap09.EX2;
+
+
+class Join_EX {
+	public String name;
+	public String id;
+	public String pw;
+	public String phone;
+	public String email;
+	
+//생성자로 초기화	
+	public Join_EX(String name, String id, String pw, String phone, String email) {
+			super();
+			this.name = name;
+			this.id = id;
+			this.pw = pw;
+			this.phone = phone;
+			this.email = email;
+		}
+	
+	
+	public void printinfo() {
+		System.out.printf("회원명 : %s\n아이디: %s\n비밀번호: %s\n전화번호: %s\n이메일: %s\n",
+		this.name,
+		this.id,
+		this.pw,
+		this.phone,
+		this.email);
+	}
+	
+	public boolean checkId(String inputUserID) {
+		return this.id.equals(inputUserID);
+	}
+	
+	
+	public void updateInfo(String newPh, String newEmail){
+		this.phone = newPh;
+		this.email = newEmail;
+		System.out.println("회원정보가 수정되었습니다.");
+	}
+}

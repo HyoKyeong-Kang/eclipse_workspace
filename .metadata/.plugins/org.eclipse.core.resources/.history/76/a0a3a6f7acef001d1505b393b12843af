@@ -1,0 +1,49 @@
+package chap10_overriding;
+
+class Brand {
+	void car() {}
+	void bike() {}
+}
+	
+
+class Car extends Brand{
+	@Override
+	void car() {
+		System.out.println("차가");
+	}
+}
+
+class Bike extends Brand{
+	@Override
+	void bike() {
+		System.out.println("오토바이가");
+	}
+}
+
+public class Vehicle {
+	protected String brand;
+	
+	public Vehicle(String brand) {
+		this.brand = brand;
+	}
+	public void drive() {
+		System.out.println(" 운전 중입니다.");
+	}
+	public void horn() {
+		System.out.println(" 경적을 울립니다.");
+	}
+	public void accelate() {
+		System.out.println(" 가속합니다.");
+	}
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Brand bb = new Brand();
+		Car cc =new Car();
+		Bike b = new Bike();
+		cc.car();
+		bb.bike();
+	}
+	
+}

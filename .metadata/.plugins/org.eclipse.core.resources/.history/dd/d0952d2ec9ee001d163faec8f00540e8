@@ -1,0 +1,52 @@
+package chap09.EX2;
+
+import java.util.Scanner;
+
+public class JoinInput {
+public static void main(String[] args) {
+//	Join_Ex id1 =new Join_EX("홍길동");
+	Scanner sc = new Scanner(System.in);
+	System.out.println("이름을 입력하시오 : ");
+	String iName = sc.nextLine();
+	
+	System.out.println("아이디를 입력하시오 : ");
+	String iID = sc.nextLine();
+	
+	System.out.println("비밀번호를 입력하시오 : ");
+	String iPW = sc.nextLine();
+	
+	System.out.println("핸드폰 번호를 입력하시오[예)010-0000-0000] : ");
+	String iPh = sc.nextLine();
+	
+	System.out.println("이메일을 입력하시오[예)아이디@이메일.com] : ");
+	String iEmail = sc.nextLine();
+	
+	Join_EX member = new Join_EX (iName, iID, iPW, iPh, iEmail);
+	member.printinfo();
+
+//	System.out.printf("회원명: %s\n", iName);
+//	System.out.printf("아이디: %s\n", iID);
+//	System.out.printf("비밀번호: %s\n", iPW);
+//	System.out.printf("전화번호: %s\n", iPh);
+//	System.out.printf("이메일: %s\n", iEmail);
+	
+	
+	System.out.println("기존의 아이디를 입력하세요.");
+	String newid = sc.next();
+	
+	if(iID.equals(newid)) {
+		System.out.println("변경할 핸드폰 번호를 입력하세요 : ");
+		String newPh = sc.next();
+		System.out.println("변경할 이메일을 입력하세요 : ");
+		String newEmail = sc.next();
+		
+		member.updateInfo(newPh, newEmail);
+		member.printinfo();
+	}
+	else {
+		System.out.println("회원가입을 진행하세요.");
+
+	}
+	
+}
+}

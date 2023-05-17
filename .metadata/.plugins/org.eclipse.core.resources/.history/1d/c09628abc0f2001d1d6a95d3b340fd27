@@ -1,0 +1,22 @@
+package objectMethod;
+
+public class Person { //extends object
+	String name;
+	int age;
+	
+	
+	public Person(String name, int age) {
+		super(); //Object();
+		this.name = name;
+		this.age = age;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Person [name=" + name + ", age=" + age + "]";
+		//Person [강효경= 강효경]
+	}
+	
+	
+}
