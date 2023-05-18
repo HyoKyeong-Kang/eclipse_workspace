@@ -1,7 +1,0 @@
-package chap09.EX2;
-
-public class DeleteUser {
-	public static void main(String[] args) {
-		
-	}
-}
